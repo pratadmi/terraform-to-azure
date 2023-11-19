@@ -22,7 +22,7 @@ resource "azurerm_service_plan" "sndbx12_plan" {
 }
 
 resource "azurerm_linux_web_app" "sndbx12_app" {
-  name                = "dmipro"
+  name                = "dmipro2"
   resource_group_name = azurerm_service_plan.sndbx12_plan.resource_group_name
   location            = azurerm_service_plan.sndbx12_plan.location
   service_plan_id     = azurerm_service_plan.sndbx12_plan.id
