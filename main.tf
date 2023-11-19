@@ -12,17 +12,11 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "snbx12" {
-
-  name     = "Sandbox12"
-  location = "North Europe"
-
-}
 
 resource "azurerm_service_plan" "sndbx12_plan" {
   name                = "sandbox12-sp"
-  resource_group_name = azurerm_resource_group.snbx12.name
-  location            = azurerm_resource_group.snbx12.location
+  resource_group_name = "Sandbox12"
+  location            = "North Europe"
   os_type             = "Linux" 
   sku_name            = "F1"   
 }
