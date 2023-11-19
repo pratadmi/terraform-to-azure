@@ -46,6 +46,4 @@ resource "azurerm_linux_web_app" "sndbx12_app" {
 
   }
 
-
-
 }
