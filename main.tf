@@ -41,7 +41,6 @@ resource "azurerm_linux_web_app" "sndbx12_app" {
       docker_image     = "httpd"
       docker_image_tag = "latest"
 
-
     }
 
   }
